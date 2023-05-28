@@ -6,7 +6,7 @@ type Usuario = {
   dataNacimento?: string
 }
 
-type NewUser = Required<Omit<Usuario, 'rg'>>
+export type NewUser = Required<Omit<Usuario, 'rg'>>
 
 const cadastrarUsuário = (info: Usuario): Usuario => {
   return info;
